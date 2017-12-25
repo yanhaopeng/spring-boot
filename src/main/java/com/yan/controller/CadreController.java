@@ -61,15 +61,5 @@ public class CadreController {
         return result;
     }
 
-    @RequestMapping(value="/add")
-    public Result addCadreInfo(){
-        CadreInfo cadreInfo = new CadreInfo();
-        cadreInfo.setName("颜浩鹏");
-        cadreInfo.setAge(21);
-        cadreInfo.setGender("男");
-        boolean bool = cadreInfoService.insertCadre(cadreInfo);
-        Result result = ResultGenerator.genSuccessResult();
-        result.setData(bool);
-        return result;
-    }
+
 }
