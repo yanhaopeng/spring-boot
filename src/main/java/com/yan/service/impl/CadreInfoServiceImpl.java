@@ -33,7 +33,7 @@ public class CadreInfoServiceImpl implements CadreInfoService {
         JSONObject personJsonObject = new JSONObject();
 
         Optional<CadreInfo> baseInfo = this.getBaseInfo(id);
-        baseInfo.ifPresent(e -> personJsonObject.put("baseInfo", e));
+        baseInfo.ifPresent(e -> personJsonObject.put("RFF", e));
 
         return personJsonObject;
     }
